@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+		<title>FairlyOddZootopia</title>
+		<meta
+			name="description"
+			content="This Art Community is Inspired by the 90's era of cartoons"
+		/>
+		<meta name="author" content="Diante Littles" />
+		<link rel="stylesheet" type="text/css" href="./StyleSheets/MainDark.css" />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="./ImageDir/FOZ_icon.png"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style></style>
+		<script src="./Scripts/CookieTest.js"></script>
+	</head>
+
+	<body>
+		<script>
+			<html>
+				<div id="Startscreen">
+					<h2>Powered By ...</h2>
+					<p>Code Smarter</p>
+				</div>
+				;
+			</html>;
+		</script>
+
+		<div id="mySidenav" class="sidenav">
+			<a href="#" class="title">
+				<img
+					src="./ImageDir/FOZ_icon.png"
+					style="align-self: auto;"
+					width="32px"
+					height="32px"
+					alt="HomePage"
+				/>FOZ_Menu</a
+			>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&otimes;</a
+			>
+			<a href="javascript:void(0)">MorePagesSoon!!!</a>
+
+			<button class="accordion" onclick="">
+				<h2>Themes</h2>
+			</button>
+			<div class="panel">
+				<a href="#" onclick="changeCSS('./StyleSheets/MainDark.css')"
+					>DarkMode</a
+				>
+				<a href="#" onclick="changeCSS('./StyleSheets/MainLight.css')"
+					>LightMode</a
+				>
+			</div>
+		</div>
+
+		<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+		<div id="main">
+			<div class="container">
+				<center>
+					<img
+						style="align-self: auto;"
+						src="./ImageDir/FozBg.png"
+						width="100%"
+						height="480vh"
+					/>
+				</center>
+				<center>
+					<h1 class="ml3">FairlyOddZootopia</h1>
+				</center>
+			</div>
+
+			<div id="navbar">
+				<!-- <a class="active"  href="javascript:void(0)"><a href =HomePage.html><img src="Home_icon.png" style="align-self: auto;" width="32px" height = "32px" alt="HomePage"></a></a>
+                       --><a
+					href="javascript:void(0)"
+					class="Active"
+					onclick="openNav()"
+					><img
+						src="./ImageDir/MenuIcon.png"
+						style="align-self: auto;"
+						width="32px"
+						height="32px"
+						alt="MenuIcon"
+				/></a>
+				<s href="javascript:void(0)"
+					><img
+						src="./ImageDir/Search_icon.png"
+						style="align-self: auto;"
+						width="32px"
+						height="32px"
+						alt="MenuIcon"
+					/>Search Currently is Offline.
+				</s>
+			</div>
+			<div style="clear:both">
+				<button
+					class="tablink"
+					onclick="openPage('Home', this, '#555')"
+					id="defaultOpen"
+				>
+					HomePage
+				</button>
+				<button class="tablink" onclick="openPage('LiveChat', this, '#555')">
+					Discord
+				</button>
+				<button class="tablink" onclick="openPage('Media', this,'#555')">
+					Media
+				</button>
+				<button class="tablink" onclick="openPage('About', this, '#555')">
+					About
+				</button>
+
+				<div id="Home" class="tabcontent">
+					<h2>DashBoard</h2>
+					<link
+						rel="stylesheet"
+						href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+					/>
+					<button onclick="listView()" style="padding: 12px 16px; float: left;">
+						<i class="fa fa-bars"></i> List
+					</button>
+					<button onclick="gridView()" style="padding: 12px 16px;float: left;">
+						<i class="fa fa-th-large"></i> Grid
+					</button>
+					<div style="clear:both">
+						<div class="row">
+							<div class="column">
+								<button class="accordion" onclick="">
+									<h2>Updates.</h2>
+								</button>
+								<div class="panel">
+									<h3>Schedule</h3> 
+									<p>9/26/19 Site Construction</p>
+									<p>10/07/19 Site Review</p>
+									<p>10/10/19 Beta Release w/ release notes</p>
+									<p>10/15/19 Additional Feature Update</p>
+									<h3>Current Site Version</h3>
+									<p> 0.2.0 (Beta Edition)</p>
+								</div>
+							</div>
+							<div class="column">
+								<button class="accordion" onclick="">
+									<h2>Media</h2>
+								</button>
+								<div class="panel">
+									<p>
+										You can check out our Story on by Visiting the pages linked
+										below or alternitively if you'd like a preview of what we've
+										been working on feel free to click the media tab on the
+										TabBar
+									</p>
+									<button>
+										<img
+											src="./ImageDir/DeviantArt_icon.png"
+											width="64vw"
+											height="64vh"
+											alt="Deviantart"
+										/>
+
+										<a
+											href="https://www.deviantart.com/fairytalesartist/gallery/64265506/fairly-odd-zootopia"
+										>
+											<h2 style="text-align: right; float: right;">FOZ Comic</h2>
+										</a>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column">
+								<button class="accordion" onclick="">
+									<h2>News.</h2>
+								</button>
+								<div class="panel"><p>Some Text</p></div>
+							</div>
+
+							<div class="column">
+								<button class="accordion" onclick="">
+									<h2>Live Stats</h2>
+								</button>
+								<div class="panel">
+									<div style="float: left">
+										<h2>Discord</h2>
+										<iframe
+											src="https://discordapp.com/widget?id=231128243074236416&theme=dark"
+											width="350vw"
+											height="500vh"
+											allowtransparency="true"
+											frameborder="0"
+										></iframe>
+									</div>
+									<div style="clear: both"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script src="./Scripts/Funtions.js"></script>
+				</div>
+
+				<div id="Media" class="tabcontent">
+					<h2>Media</h2>
+					<button class="accordion" onclick="">
+						<h2>Deviantart Integtations</h2>
+					</button>
+					<div class="panel">
+							<link
+							rel="stylesheet"
+							href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+						/>
+						<button onclick="listView()" style="padding: 12px 16px; float: left;">
+							<i class="fa fa-bars"></i> List
+						</button>
+						<button onclick="gridView()" style="padding: 12px 16px;float: left;">
+							<i class="fa fa-th-large"></i> Grid
+						</button>
+						<div style="clear:both">
+							<div class="row">
+								<div class="column">
+						<p>FairlyOddZootopia</p>
+						<iframe
+							src="https://www.deviantart.com/fairytalesartist/gallery/64265506/fairly-odd-zootopia"
+							width="100%"
+							height="500"
+							allowtransparency="true"
+							frameborder="0"
+						></iframe>
+					   </div>
+					   <div class="column">
+						<p>Zootopia-Acadamy</p>
+						<iframe
+							src="https://www.deviantart.com/zootopia-acadamy"
+							width="100%"
+							height="500"
+							allowtransparency="true"
+							frameborder="0"
+						></iframe></div>
+					</div>
+					</div>
+					</div>
+				</div>
+
+				<div id="About" class="tabcontent">
+					<button class="accordion" onclick="">
+						<h2>Meet The Team</h2>
+					</button>
+					<div class="panel">
+						<link
+							rel="stylesheet"
+							href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+						/>
+						<button
+							onclick="listView()"
+							style="padding: 12px 16px; float: left;"
+						>
+							<i class="fa fa-bars"></i> List
+						</button>
+						<button
+							onclick="gridView()"
+							style="padding: 12px 16px;float: left;"
+						>
+							<i class="fa fa-th-large"></i> Grid
+						</button>
+						<div style="clear:both">
+							<div class="row">
+								<div class="column">
+									<div class="TitleCard">
+										<center>
+											<img
+												src="./ImageDir/Kit Knightwood.png"
+												class="TitleImg"
+												height="1005px"
+												width="1005px"
+												alt=""
+											/>
+										</center>
+										<center><h2>Kit Knightwood</h2></center>
+										<h3>
+											Roles:
+											<ul>
+												<li>Head Coordinator</li>
+												<li>CoWriter</li>
+											</ul>
+										</h3>
+										<h3>Desc.</h3>
+										<p class="TitleText">
+											Hailing from the classic era of the Internet. Kit
+											Knightwood knows how to handle commmunities. He has
+											extensive connections and is generally friendly towards
+											others. He also greatly values Quality over Quantity. It
+											is these attributes that make him the Great Leader of this
+											community.
+										</p>
+										<p class="TitleText" >
+											Kit is also an amazing writer as many of his works pulls 
+											inspiration from the golden era of entertainment (70's - 90's) 
+											his writing skills are further exemplified by the Comic. 
+										</p>
+									</div>
+								</div>
+								<div class="column">
+										<div class="TitleCard">
+											<center>
+												<img
+													src="./ImageDir/TrueBlueMan.png"
+													class="TitleImg"
+													alt=""
+												/>
+											</center>
+											<center><h2>TrueBlueMan</h2></center>
+											<h3>Roles:</h3>
+											 <h3>
+												 <ul>
+													 <li>Head Developer</li>
+													 <li>Community Admin</li>
+												 </ul>
+											 </h3>
+											<h3>Desc.</h3>
+											<p class="TitleText">
+												TrueBlueMan is the main Designer, Programer and over all
+												technician of the community. He may not be online all the
+												time due to his busy schedule. but you'd better believe that
+												when he is online he is serious about making sure eveything
+												functions properly.			
+											</p>
+											<p class="TitleText">
+												If you are ever in need of a sharply focused and versitile developer be sure to contact him.
+												</p>
+										</div>
+									</div>
+							</div>
+							<div class="row">
+									<div class="column">
+											<div class="TitleCard">
+													<center>
+														<img
+															src="./ImageDir/finnickabrenica09.png"
+															class="TitleImg"
+															alt=""
+														/>
+													</center>
+													<center><h2>FinnickAbrenica09</h2></center>
+													<h3>Roles:</h3>
+													 <h3>
+														 <ul>
+															 <li>Artist</li>
+															 <li>Community Admin</li>
+														 </ul>
+													 </h3>
+													<h3>Desc.</h3>
+													<p class="TitleText">
+														Fennick is a great artist and community admin. 
+														He is also generally friendly towards others, his connections 
+														and knowledge make him a great addition to the team. 
+														he strives to improve his art work everyday and is overall a 
+														strong pillar of this community.
+													</p>
+												</div>
+									</div>
+									<div class="column">
+											<div class="TitleCard">
+													<center>
+														<img
+															src="./ImageDir/fairytalesartist.png"
+															class="TitleImg"
+															alt=""
+														/>
+													</center>
+													<center><h2>Anthony Hanssans</h2></center>
+													<h3>Roles:</h3>
+													 <h3>
+														 <ul>
+															 <li> Head Artist</li>
+															 <li>Discord Server Owner</li>
+														 </ul>
+													 </h3>
+													<h3>Desc.</h3>
+													<p class="TitleText">
+														Anthony Hanssans is perhaps one of the greatest cartoon artists of the century as 
+														he has the uncanny ability to replicate almost any cartoon style of his choosing. 
+														This is most often seen in most of his works. In fact his artistic ability is so great
+														that it is a wonder that Disney hasn't hired him yet. He has the absolute sharpest 
+														focus of any artist and if you commision him for any artwork. you'll always 
+														recieve a professional quality work of art. However contrary to his raw talent 
+														he is actually very modest and humble. It is these qualities that has surrounded 
+														him with a growing community of over 190+ Discord Members and over 
+														1.3K Watchers on Deviantart. But don't just take our word for it, check out his 
+														page and see for your self. 
+													</p>
+												</div>
+									</div>
+							</div>
+							
+
+						</div>
+					</div>
+					<button class="accordion" onclick="">
+							<h2>Legal info.</h2>
+						</button>
+						<div class="panel">
+							<h2>Disclaimer</h2>
+							<p>
+								This Community is in no way affiliated with Disney, Nickolodeon or
+								the subsidiaries thereof. It is meant to be viewed merely as a
+								fanbase surrounding non-canon & fan-fiction artwork of the
+								community. That being said, This community is exercising its right
+								to share contents and express itself via the FairUse clause and
+								Free Expression/ Free Speech rights of the first ammendment of the
+								constitution of the United States of America. It is also to be
+								noted that this community in a non-commercial entity and that
+								donations made to the artists therein are being sent as a means of
+								support and not as a means of profit or to sell a work. As a
+								result we would like to humbly ask for your discretion when
+								viewing the contents of the site.
+							</p>
+							<p>Final Note:</p>
+							<p>
+								The Website's Creator would also like to mention that they are in
+								no way responsible for the content of the pages & accounts linked
+								to this Website. The contents created within this Website were
+								added completely at the discretion of the client. Please contact
+								the client for any other information.
+							</p>
+						</div>
+				</div>
+				<div id="LiveChat" class="tabcontent" style="display: none;">
+					<center><img src="./ImageDir/FOZ_DiscordBanner.jpg" width= "206px" height ="311px" alt=""></center>
+					<p>
+						Wanna Be a part of our Amazing community of Artists and Fans? Well
+						we want you to join us. Click the button below to get started. Also
+						feel free to tap / click on the discord icon at the top right corner
+						if you would like to chat with the server.
+					</p>
+					<button class="accordion" onclick="">
+						<h2>Join The Community.</h2>
+					</button>
+					<div class="panel">
+						<h3>CommunityRules</h3>
+						<p>
+							Here are some Basic Community guidelines to follow before joining.
+						</p>
+						<ul>
+							<li>
+								Rule 1: Don't insult or harrass our members in any server.
+							</li>
+							<li>
+								Rule 2: Don't post NSFW or NSFL content anywere.
+							</li>
+							<li>
+								Rule 3: Be respectful with members here.
+							</li>
+							<li>
+								Rule 4: No spamming the server.
+							</li>
+							<li>
+								Rule 5: No swearing allowed. People don't like it.
+							</li>
+							<li>
+								Rule 6: Content posted must be relative to the topic of the
+								chat.
+							</li>
+							<li>
+								Rule 7: No Anti-Social behavior here.
+							</li>
+							<li>
+								Rule 8: No sabbotage. this should go without saying but Spys,
+								Raiders, Hackers, and Trolls are not allowed here or anywhere
+								for that matter. If suspected of doing any of this you will be
+								banned.
+							</li>
+						</ul>
+						<p>
+							Also as a special note: This is not a "SafeSpace". No SJW behavior
+							allowed. All acusations will be thoroughly investigated. If a
+							person is found to be falsely accused than the accuser will be
+							banned.
+						</p>
+
+						<center>
+							<button id="myBtn" style="width: 100%;"><h2>Join</h2></button>
+						</center>
+
+						<div id="myModal" class="modal">
+							<div class="modal-content">
+								<span class="close">&times;</span>
+								<center><h2>Attention</h2></center>
+								<p>
+									You are about to leave the site and enter our discord server.
+									By doing so you are acknowleging that you have read the
+									Community Rules & Info and you are completly aware that
+									failure to follow these guidelines can result in a perminate
+									ban from the server.
+								</p>
+								<center>
+									<a href="https://discord.gg/N3xzTXY">
+										Join
+									</a>
+								</center>
+							</div>
+						</div>
+						<script src="./Scripts/Funtions.js"></script>
+					</div>
+
+					<script>
+						//for accordion
+						var acc = document.getElementsByClassName("accordion");
+						var i;
+						for (i = 0; i < acc.length; i++) {
+							acc[i].addEventListener("click", function() {
+								this.classList.toggle("active");
+								var panel = this.nextElementSibling;
+								if (panel.style.maxHeight > "0vh") {
+									panel.style.maxHeight = "0vh";
+								} else {
+									panel.style.maxHeight = panel.scrollHeight + "vh";
+								}
+							});
+						}
+					</script>
+					<button class="livechat" onclick="">
+						<img
+							src="./ImageDir/Discord_icon.png"
+							width="64px"
+							height="64px"
+							alt=""
+							style="float: left;"
+						/>
+						<center>LiveChat</center>
+					</button>
+					<div class="openchat">
+						<center>
+							<widgetbot
+								server="231128243074236416"
+								channel="626765735523385364"
+								width="400px"
+								height="500"
+								shard="https://disweb.deploys.io"
+							></widgetbot>
+							<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+						</center>
+					</div>
+
+					<script>
+						window.onscroll = function() {
+							lock();
+						};
+						var livechat = document.getElementsByClassName("livechat");
+						var sticky = livechat.offsetTop + pageYOffset;
+						function lock() {
+							if (window.pageYOffset >= sticky) {
+								livechat.classList.add("sticky");
+							} else {
+								livechat.classList.remove("sticky");
+							}
+						}
+
+						var i;
+						for (i = 0; i < acc.length; i++) {
+							livechat[i].addEventListener("click", function() {
+								this.classList.toggle("A");
+								var panel = this.nextElementSibling;
+								if (panel.style.maxHeight > "0px") {
+									panel.style.maxHeight = "0px";
+								} else {
+									panel.style.maxHeight = panel.scrollHeight + "px";
+								}
+							});
+						}
+					</script>
+				</div>
+			</div>
+			<script>
+				function changeCSS(cssFile, cssLinkIndex) {
+					var oldlink = document
+						.getElementsByTagName("link")
+						.item(cssLinkIndex);
+
+					var newlink = document.createElement("link");
+					newlink.setAttribute("rel", "stylesheet");
+					newlink.setAttribute("type", "text/css");
+					newlink.setAttribute("href", cssFile);
+
+					document
+						.getElementsByTagName("head")
+						.item(0)
+						.replaceChild(newlink, oldlink);
+				}
+
+				window.onscroll = function() {
+					myFunction();
+				};
+				var navbar = document.getElementById("navbar");
+				var sticky = navbar.offsetTop;
+
+				function openNav() {
+					document.getElementById("mySidenav").style.width = "250px";
+					document.getElementById("main").style.marginLeft = "250px";
+					document.body.style.backgroundColor = "rgb(0,0,0,0.4)";
+				}
+
+				function closeNav() {
+					document.getElementById("mySidenav").style.width = "0";
+					document.getElementById("main").style.marginLeft = "0";
+					document.body.style.backgroundColor = "white";
+				}
+
+				function myFunction() {
+					if (window.pageYOffset >= sticky) {
+						navbar.classList.add("sticky");
+					} else {
+						navbar.classList.remove("sticky");
+					}
+				}
+				function openPage(pageName, elmnt, color) {
+					var i, tabcontent, tablinks;
+					tabcontent = document.getElementsByClassName("tabcontent");
+					for (i = 0; i < tabcontent.length; i++) {
+						tabcontent[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablink");
+					for (i = 0; i < tablinks.length; i++) {
+						tablinks[i].style.backgroundColor = "";
+					}
+					document.getElementById(pageName).style.display = "block";
+					elmnt.style.backgroundColor = color;
+				}
+
+				// Get the element with id="defaultOpen" and click on it
+				document.getElementById("defaultOpen").click();
+			</script>
+		</div>
+
+		<!--<h1 style="color:aqua;" margin-left:15px >My First WebPage</h1>-->
+
+		<div style="color:aqua;" id="footer">
+			<center>&copy; TrueBlueMan(Diante Littles) 2019. All rights reserved.</center>
+		</div>
+	</body>
+</html>
